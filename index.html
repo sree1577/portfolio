@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanyata Kothapalli | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('dc2Ta8oeyJcYgkZ0u');</script>
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- ===== PARTICLES BACKGROUND ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">DK<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li><a href="March-resume-2026.pdf" download="Dhanyata_Kothapalli_Resume.pdf" class="nav-btn">Resume <i class="fas fa-download"></i></a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Hi there, I'm</p>
+        <h1 class="hero-name">Sri Naga Dhanyata<br /><span class="gradient-text">Kothapalli</span></h1>
+        <div class="hero-typing">
+          <span class="typing-prefix">I'm a </span>
+          <span id="typed-text" class="typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-intro">
+          B.Tech IT student passionate about building scalable web applications,
+          AI-powered workflows, and clean, modern user experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact"  class="btn btn-outline">Contact Me <i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="profile-glow">
+          <div class="profile-ring"></div>
+          <div class="profile-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="about-icon"><i class="fas fa-code"></i></div>
+          <h3>Full Stack Developer</h3>
+          <p>I build end-to-end web applications using React, Node.js, Express, and databases like MongoDB and MySQL — focusing on clean architecture and performance.</p>
+        </div>
+        <div class="about-card glass reveal">
+          <div class="about-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Enthusiast</h3>
+          <p>I integrate LLMs and AI tools into real workflows — from prompt engineering to building automation pipelines that reduce manual effort and boost productivity.</p>
+        </div>
+        <div class="about-card glass reveal">
+          <div class="about-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud & DevOps</h3>
+          <p>Hands-on experience with AWS services including EC2, S3, RDS, IAM, and ETL pipelines using Glue and Athena for cloud-based deployments.</p>
+        </div>
+        <div class="about-card glass reveal">
+          <div class="about-icon"><i class="fas fa-brain"></i></div>
+          <h3>Problem Solver</h3>
+          <p>Actively strengthening DSA skills and algorithmic thinking. I enjoy breaking down complex problems into clean, efficient solutions.</p>
+        </div>
+      </div>
+      <div class="about-bio reveal">
+        <p>
+          I'm <strong>Sri Naga Dhanyata Kothapalli</strong>, a B.Tech Information Technology student at Shri Vishnu Engineering College for Women (2023–2027), based in Andhra Pradesh, India.
+          I've interned at multiple companies — building LLM-powered tools, developing full-stack SaaS platforms, and working with AWS cloud infrastructure.
+          I'm driven by a love for clean UI, scalable systems, and the intersection of AI and modern web development.
+        </p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Internships</span></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Students Reached</span></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Languages</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I work with</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Each skill card -->
+        <div class="skill-card glass reveal"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-react"></i><span>React.js</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-server"></i><span>Express.js</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-code"></i><span>C</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-code"></i><span>C++</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-plug"></i><span>REST APIs</span></div>
+        <div class="skill-card glass reveal"><i class="fab fa-aws"></i><span>AWS Basics</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-magic"></i><span>Prompt Engineering</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-robot"></i><span>AI Tools</span></div>
+        <div class="skill-card glass reveal"><i class="fas fa-sitemap"></i><span>DSA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Where I've worked</p>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Development Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> FortiX Cyber Defence — Remote</p>
+              </div>
+              <span class="timeline-date">Jan 2026 – Mar 2026</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed responsive frontend interfaces using React.js and Tailwind CSS for an enterprise cybersecurity SaaS platform.</li>
+              <li>Built and integrated REST APIs using Node.js and Express for authentication and client access management.</li>
+              <li>Implemented secure JWT-based role authentication and optimized API response times.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React.js</span><span>Node.js</span><span>JWT</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI Developer Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Freedom With AI — Remote</p>
+              </div>
+              <span class="timeline-date">Oct 2025 – Dec 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Built LLM-powered workflow automation tools reducing manual task time by 30%.</li>
+              <li>Designed structured prompt frameworks to improve output consistency across AI pipelines.</li>
+              <li>Integrated AI modules into UI workflows for automated content and code generation.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>LLMs</span><span>Prompt Engineering</span><span>AI Agents</span><span>Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Google Student Ambassador</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Google Developers Community</p>
+              </div>
+              <span class="timeline-date">Aug 2025 – Present</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Represented the Google Developers ecosystem on campus, promoting Google Gemini AI and developer programs.</li>
+              <li>Led technical workshops and peer-learning events on Gemini AI, reaching 500+ students.</li>
+              <li>Served as a liaison between students and Google, collecting feedback to improve learning outcomes.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Gemini AI</span><span>Public Speaking</span><span>Community</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI Prompt Engineer Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Data Rakshak Technologies — Hyderabad</p>
+              </div>
+              <span class="timeline-date">May 2025 – Jul 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Used AI-assisted development to design frontend UI logic, backend workflows, and database schemas.</li>
+              <li>Generated and refined solutions across JavaScript, REST APIs, and SQL queries.</li>
+              <li>Accelerated feature development using AI-driven prototyping, improving development efficiency.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Prompt Engineering</span><span>JavaScript</span><span>SQL</span><span>API Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 5 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AWS Cloud Computing – DevOps Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> APSSDC — Online</p>
+              </div>
+              <span class="timeline-date">May 2025 – Jul 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Worked with EC2, S3, IAM, and RDS to understand cloud-based application deployment.</li>
+              <li>Built basic ETL pipelines using AWS Glue and Athena.</li>
+              <li>Practised Linux commands and cloud resource management.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AWS</span><span>EC2</span><span>S3</span><span>ETL</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I've built</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-tasks"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/sree1577" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">SR-TODO</h3>
+          <p class="project-desc">
+            A full-stack productivity app with drag-and-drop task management, calendar integration, and voice-based task input using the Web Speech API.
+          </p>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> Drag-and-drop task management</li>
+            <li><i class="fas fa-check"></i> Speech-to-text task input</li>
+            <li><i class="fas fa-check"></i> Calendar integration</li>
+            <li><i class="fas fa-check"></i> Scalable state management</li>
+          </ul>
+          <div class="project-stack">
+            <span>Next.js</span><span>TypeScript</span><span>React</span><span>Web Speech API</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/sree1577" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/sree1577" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">ThriUCare</h3>
+          <p class="project-desc">
+            A healthcare web app with secure authentication, personalised symptom tracking dashboards, and a REST-based backend for scalable data handling.
+          </p>
+          <ul class="project-features">
+            <li><i class="fas fa-check"></i> Secure auth & session management</li>
+            <li><i class="fas fa-check"></i> Personalised symptom dashboards</li>
+            <li><i class="fas fa-check"></i> REST API backend architecture</li>
+            <li><i class="fas fa-check"></i> E-commerce integration</li>
+          </ul>
+          <div class="project-stack">
+            <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/sree1577" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Academic background</p>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="edu-card glass reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <h3>B.Tech – Computer Science & Engineering (IT)</h3>
+          <p class="edu-college"><i class="fas fa-university"></i> Shri Vishnu Engineering College for Women, Bhimavaram</p>
+          <p class="edu-year"><i class="fas fa-calendar-alt"></i> 2023 – 2027</p>
+          <p class="edu-desc">Pursuing a Bachelor of Technology in Information Technology with a focus on full-stack development, AI/ML, cloud computing, and data structures & algorithms.</p>
+          <div class="edu-tags">
+            <span>Full Stack Dev</span><span>AI/ML</span><span>Cloud Computing</span><span>DSA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Let's connect</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm currently open to internship opportunities and collaborations. Whether you have a project idea, a question, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-details">
+            <a href="mailto:srinagadhanyata06@gmail.com?subject=Hello%20Dhanyata%20-%20Portfolio%20Inquiry" class="contact-item glass">
+              <i class="fas fa-envelope"></i>
+              <span>srinagadhanyata06@gmail.com</span>
+            </a>
+            <a href="https://github.com/sree1577" target="_blank" class="contact-item glass">
+              <i class="fab fa-github"></i>
+              <span>github.com/sree1577</span>
+            </a>
+            <a href="https://www.linkedin.com/in/dhanyata-chowdary-kothapalli23b01a1286" target="_blank" class="contact-item glass">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+            <div class="contact-item glass">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Andhra Pradesh, India</span>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://github.com/sree1577" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dhanyata-chowdary-kothapalli23b01a1286" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:srinagadhanyata06@gmail.com?subject=Hello%20Dhanyata%20-%20Portfolio%20Inquiry" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <form class="contact-form glass reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="from_name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="from_email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi Dhanyata, I'd love to connect..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <p class="footer-text">Built with <span class="heart">❤️</span> by <span class="gradient-text">Dhanyata Kothapalli</span></p>
+      <p class="footer-sub">© 2026 All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
