@@ -2,7 +2,7 @@
 
 A modern, minimalistic personal portfolio website built with pure HTML, CSS, and JavaScript. No frameworks, no dependencies — just clean code.
 
-🌐 **Live Site:** _your-netlify-url-here_
+🌐 **Live Site:** [https://sree1577.github.io/portfolio/](https://sree1577.github.io/portfolio/)
 
 ---
 
